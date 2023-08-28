@@ -10,32 +10,64 @@
 }
 
 body {
-    background: url('media/pexels-kevin-ku.jpg') no-repeat center center fixed;
-    background-size: cover;
     height: calc(100vh - 164px);
-    font:'Monserrat';
+    color: #000;
+    font-family: 'Montserrat';
+    overflow-y: scroll;
 }
+
+/* COLORS */
 
 .color-black {
     color: #000000;
 }
 
 .color-dark-gray {
-    color: #535453;
+    color: #252525;
 }
 
-.color-red {
-    color: #F80A0A;
+.color-beige {
+    color: #a69585;
 }
 
-.color-yellow {
-    color: #FFC861;
+.color-white {
+    color: #f4f4f4;
 }
 
 .color-gray-white {
-    color: #F2F2F2;
+    color: #DADADA;
 }
 
+/* index page */
+
+.index-img {
+    background: url('/media/pexels-kevin-ku.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+.off-canvas-wrapper {
+    backface-visibility: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #252525;
+    color: #DADADA;
+    transition: all 0.3s;
+}
 
 /* from Bulma */
 .icon {
